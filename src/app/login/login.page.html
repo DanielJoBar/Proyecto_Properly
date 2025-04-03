@@ -1,0 +1,31 @@
+<ion-header>
+
+</ion-header>
+
+<ion-content>
+  <ion-card class="card">
+    <ion-card-header>
+      <ion-card-title class="titulo">Foto</ion-card-title>
+      <ion-card-subtitle class="titulo">Login</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-card-content>
+      <label class="label" >Usuario</label>
+      <!--ngModel es como un puente entre HTML y TypeScript
+          Si escribe algo el usuario cambia la variable 
+          de nuestro TS.
+
+      -->
+        <input type="text" class="input" [(ngModel)]="username" name="username">
+        <br>
+        <label class="label">contraseña</label>
+        <input type="password" class="input" [(ngModel)]="password" name="password">
+        <br>
+        <ion-button class="boton" (click)="login()">LOGIN</ion-button>
+        
+      </ion-card-content>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+

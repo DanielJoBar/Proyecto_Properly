@@ -1,0 +1,50 @@
+.card{
+    display: flex;
+    position: absolute;
+    background-color: rgb(17, 117, 211);
+    padding: 5px;
+    margin-top:300px;
+    border: solid;
+    border-color: black;
+    border-radius: 40px;
+    box-shadow: 30px;
+    
+
+
+}
+
+.titulo{
+    color: black;
+    letter-spacing: 2px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+
+}
+
+.label{
+    color: black;
+    letter-spacing: 2px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+.input{
+
+    border: 10px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    
+}
+
+.boton{
+    
+    --background:white;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-size: 10px;
+    color: black;
+    font-weight: bold;
+    --box-shadow: 4px 4px 10px rgba(0,0,0,0.8);
+
+}
