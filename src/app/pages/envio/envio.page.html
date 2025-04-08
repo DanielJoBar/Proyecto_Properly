@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>envio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- src/app/pages/cartas/cartas.component.html -->
+<ion-content class="ion-padding">
+  <ng-container *ngIf="cartas$ | async as cartas">
+    <ion-card *ngFor="let carta of cartas">
+      <ion-card-header>
+        <ion-card-title>{{ carta.title }}</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+  </ng-container>
+
+  <div class="boton-contenedor">
+    <ion-button expand="block" shape="round">
+      <ion-icon slot="start" name="add-outline"></ion-icon>
+      Añadir
+    </ion-button>
+  </div>
+</ion-content>
+
