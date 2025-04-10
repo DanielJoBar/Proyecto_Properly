@@ -1,9 +1,16 @@
-/* src/app/pages/cartas/cartas.component.scss */
-.boton-contenedor {
-    position: fixed;
-    bottom: 20px;
-    left: 30%;
-    width: 40%;
-    z-index: 1000;
+.bottom-button {
+    width: 90%; 
+    height: 15%; 
+    margin: 0 auto 10%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    --background: black;
   }
   
+  .bottom-button ion-icon {
+    font-size: 2rem; /* Tamaño del icono */
+  }
+  #Body{
+    background: rgb(194, 193, 193);
+  }

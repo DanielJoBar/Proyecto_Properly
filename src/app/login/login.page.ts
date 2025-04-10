@@ -11,7 +11,7 @@ import { DbInterfaceService } from '../service/db-interface.service'; //Traigo m
   templateUrl: './login.page.html',
   styleUrls: ['./login.page.scss'],
   standalone: true,
-  imports: [IonCardContent, IonCardSubtitle, IonCardTitle, IonCardHeader, IonCard, IonItem, IonList, IonButton, IonInput, IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
+  imports: [IonCardContent, IonCardSubtitle, IonCardTitle, IonCardHeader, IonCard, IonButton, IonContent, IonHeader, CommonModule, FormsModule]
 })
 export class LoginPage implements OnInit {
 

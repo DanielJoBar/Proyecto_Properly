@@ -1,24 +1,16 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>envio</ion-title>
-  </ion-toolbar>
-</ion-header>
+<div id="Body">
+  <ion-content class="ion-padding">
+    <!-- Condicional respnsable de pintar o nó los envios -->
+    <ng-container *ngIf="envios$ | async as envios">
+    <!-- Cada carta de la lista -->¡
+      <ng-container *ngFor="let envio of envios">
+        <!-- Invoca el componente app Cards para pintar la carta correspondiente -->
+        <app-cards [objeto]="envio"></app-cards>
+      </ng-container>
+    </ng-container>
 
-<!-- src/app/pages/cartas/cartas.component.html -->
-<ion-content class="ion-padding">
-  <ng-container *ngIf="cartas$ | async as cartas">
-    <ion-card *ngFor="let carta of cartas">
-      <ion-card-header>
-        <ion-card-title>{{ carta.title }}</ion-card-title>
-      </ion-card-header>
-    </ion-card>
-  </ng-container>
-
-  <div class="boton-contenedor">
-    <ion-button expand="block" shape="round">
-      <ion-icon slot="start" name="add-outline"></ion-icon>
-      Añadir
+    <ion-button expand="block" class="bottom-button" (click)="openModal()">
+      <ion-icon slot="center" name="add-outline"></ion-icon>
     </ion-button>
-  </div>
-</ion-content>
-
+  </ion-content>
+</div>

@@ -1,0 +1,19 @@
+.custom-card {
+  width: 90%; 
+  margin: 0 auto;
+  height: 15%; 
+  display: flex;
+}
+.card-title {
+  margin-left: 5%;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+.card-id {
+  margin-right: 5%;
+  right: 0;
+  color: gray;
+  font-size: 0.9rem;
+  width: 100%;
+}
